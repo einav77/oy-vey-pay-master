@@ -11,8 +11,8 @@ function setTokenCookie(res, user, secret) {
     );
 
     res.cookie('token', token, { 
-        httpOnly: true, 
-        sameSite: 'strict',
+        // httpOnly: true, 
+        // sameSite: 'strict',
         maxAge: 24 * 60 * 60 * 1000 // 24 hours
     });
 }
